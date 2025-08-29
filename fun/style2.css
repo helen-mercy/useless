@@ -1,0 +1,40 @@
+body{
+     background-color: black;
+      margin: 0;
+       height:100vh ; 
+       overflow: hidden;
+     }
+      span{
+         background: url(https://cdn1.iconfinder.com/data/icons/snowy-christmas/96/christmas_snowflake_winter_snow_newyear_96-512.png); 
+        width: 100px;
+        height: 100px; 
+        position: absolute;
+        pointer-events: none;
+        background-size: cover;
+        left: 50%; 
+        top: 50%; transform: translate(-50%,-50%); 
+        animation: animate 6s linear;
+    }
+     @keyframes animate{
+        0%{ 
+            transform: translate(-50%,-50%);
+            opacity: 1; 
+        } 
+        100%{
+             transform:translate(-50%,5000%);
+              opacity: 0;
+        }
+    }
+ .button a{
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 5px;
+        color: white;
+        background-color: rgb(54, 112, 213);
+        font-weight: bold ;
+    }
+    .button{
+        margin-top: 30px;
+        margin-left: 20px;
+    }
